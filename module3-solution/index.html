@@ -22,9 +22,10 @@
         }
         // hidde dropdown menu 
         window.addEventListener('mouseup',function(event){
-            var box = document.getElementById("collapsable-nav");
-            if(event.target != box){
-                box.style.display = "none";
+            let dropMenu = document.getElementById("collapsable-nav");
+            let navbtoggle = document.getElementsByClassName("navbar-toggle")[0];
+            if(event.target != dropMenu && event.target != navbtoggle && event.target.parentNode!=navbtoggle){
+                dropMenu.style.display = "none";
             }
         })
     </script>

@@ -35,12 +35,16 @@
     border-color: #fff;
     border-radius: 0;
 }
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #fff;
+    border-color: #fff;
+}
 .navbar-default .navbar-toggle .icon-bar {
     height: 3px;
     border-radius: 0;
     background-color: #fff;
 }
-.navbar-toggle:hover .icon-bar {
+.navbar-toggle:hover .icon-bar,.navbar-toggle:focus .icon-bar {
     background-color: #a50b0b;
 }
 /* __________________dropdown menu_________________ */
@@ -95,3 +99,9 @@
     text-decoration: none;
     font-weight: 600;
 }
+
+@media (max-width:767px){
+    .row {
+        margin: 20px 0px 0px 0px;
+    }
+ }
