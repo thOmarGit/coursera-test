@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X=UA=Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment Solution for Module 2</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <script>
+        function show_dropdown(){
+            // function for show dropdown menu
+            let show = document.getElementById("collapsable-nav");
+            let getStyle = getComputedStyle(show);
+             if(getStyle.getPropertyValue('display')=='none'){
+                 
+                show.style.setProperty("display","block");
+                }
+             else{
+                show.style.setProperty("display","none");
+                }
+        }
+        // hidde dropdown menu 
+        window.addEventListener('mouseup',function(event){
+            var box = document.getElementById("collapsable-nav");
+            if(event.target != box){
+                box.style.display = "none";
+            }
+        })
+    </script>
+<body>
+    <header>
+        <div id="header-nav" class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div id="brand-name" class="navbar-brand">
+                        <a href="#"> <h1>Food,LLC</h1> </a>
+                    </div>
+                    <!-- _______________end of brand name______________________ -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#collapsable-nav" onclick="show_dropdown()">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <!-- _______________end of button_______________________________ -->
+                <div class="collapse navbar-collapse" id="collapsable-nav">
+                    <ul id="nav-list" class="nav navbar-nav navbar-right visible-xs text-center">
+                      <li>
+                          <a href="#section3"> Chicken  </a>
+                      </li>
+                      <li>
+                          <a href="#section2"> Beef  </a>
+                      </li>
+                      <li>
+                          <a href="#section1"> Sushi  </a>
+                      </li>
+                    </ul>
+                </div>
+                <!-- _____________end of__dropdown menu_________________________ -->
+            </div>
+        </div>
+    </header>
+    <div id="main-content" class=".container-fluid">
+        <h1 class="text-center">  OUR MENU  </h1>
+        <div class="row">
+            <section id="section1" class="col col-md-4 col-sm-6 col-xs-12">
+                <div>
+                    <h3 class="text-center">  Sushi  </h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Nisi id voluptates maiores consequatur repellat tempora!
+                        Reprehenderit tempora eius iure nihil! Natus distinctio esse ipsam accusamus!
+                        Quis accusamus culpa dolores inventore beatae explicabo excepturi voluptatem minima
+                        praesentium quaerat assumenda ad iure temporibus perspiciatis,
+                        quisquam neque placeat non rerum? Voluptates error quis illum?
+                        Autem velit quisquam labore dolorum, quod architecto! Vel eius non mollitia,
+                        numquam praesentium laboriosam consectetur accusamus enim. Facilis enim fugit
+                        nobis expedita culpa eius accusamus voluptatum, amet atque non quo?
+                        Fugiat quo maiores voluptate culpa molestiae tenetur architecto non minus ipsum,
+                        nobis sed rerum cum quidem possimus maxime dicta quas ducimus.
+                        Impedit nihil optio obcaecati tempora neque magni enim magnam expedita quo cum,
+                        cumque vitae atque fuga mollitia similique quis commodi, illum quaerat rem
+                        possimus facere quod asperiores! Repellendus odit delectus ad similique eum et,
+                        pariatur ullam, dignissimos perspiciatis excepturi atque commodi eius ratione
+                        expedita rem quas animi natus doloremque nulla hic. <br>
+                        (End of Sushi Section) <a href="#header-nav">Back To Top</a>
+                    </p>
+                </div>
+            </section>
+            <section id="section2" class="col col-md-4 col-sm-6 col-xs-12">
+                <div>
+                    <h3 class="text-center">  Beef  </h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Nisi id voluptates maiores consequatur repellat tempora!
+                        Reprehenderit tempora eius iure nihil! Natus distinctio esse ipsam accusamus!
+                        Quis accusamus culpa dolores inventore beatae explicabo excepturi voluptatem minima
+                        praesentium quaerat assumenda ad iure temporibus perspiciatis,
+                        quisquam neque placeat non rerum? Voluptates error quis illum?
+                        Autem velit quisquam labore dolorum, quod architecto! Vel eius non mollitia,
+                        numquam praesentium laboriosam consectetur accusamus enim. Facilis enim fugit
+                        nobis expedita culpa eius accusamus voluptatum, amet atque non quo?
+                        Fugiat quo maiores voluptate culpa molestiae tenetur architecto non minus ipsum,
+                        nobis sed rerum cum quidem possimus maxime dicta quas ducimus.
+                        Impedit nihil optio obcaecati tempora neque magni enim magnam expedita quo cum,
+                        cumque vitae atque fuga mollitia similique quis commodi, illum quaerat rem
+                        possimus facere quod asperiores! Repellendus odit delectus ad similique eum et,
+                        pariatur ullam, dignissimos perspiciatis excepturi atque commodi eius ratione
+                        expedita rem quas animi natus doloremque nulla hic. <br>
+                        (End of Beef Section) <a href="#header-nav">Back To Top</a>
+                    </p>
+                </div>
+            </section>
+            <section id="section3" class="col col-md-4 col-sm-12 col-xs-12">
+                <div>
+                    <h3 class="text-center">  Chicken  </h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Nisi id voluptates maiores consequatur repellat tempora!
+                        Reprehenderit tempora eius iure nihil! Natus distinctio esse ipsam accusamus!
+                        Quis accusamus culpa dolores inventore beatae explicabo excepturi voluptatem minima
+                        praesentium quaerat assumenda ad iure temporibus perspiciatis,
+                        quisquam neque placeat non rerum? Voluptates error quis illum?
+                        Autem velit quisquam labore dolorum, quod architecto! Vel eius non mollitia,
+                        numquam praesentium laboriosam consectetur accusamus enim. Facilis enim fugit
+                        nobis expedita culpa eius accusamus voluptatum, amet atque non quo?
+                        Fugiat quo maiores voluptate culpa molestiae tenetur architecto non minus ipsum,
+                        nobis sed rerum cum quidem possimus maxime dicta quas ducimus.
+                        Impedit nihil optio obcaecati tempora neque magni enim magnam expedita quo cum,
+                        cumque vitae atque fuga mollitia similique quis commodi, illum quaerat rem
+                        possimus facere quod asperiores! Repellendus odit delectus ad similique eum et,
+                        pariatur ullam, dignissimos perspiciatis excepturi atque commodi eius ratione
+                        expedita rem quas animi natus doloremque nulla hic. <br>
+                        (End of Chicken Section) <a href="#header-nav">Back To Top</a>
+                    </p>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- _____________end of__the main content_________________________ -->
+</body>
