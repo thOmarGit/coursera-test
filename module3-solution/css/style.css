@@ -16,7 +16,7 @@
 }
 #brand-name h1 {
     margin: 0;
-    padding: 4px 0px 8px 0px;
+   padding: 5px 0px 8px 0px;
     color: #fff700;
     font-family: palatino linotype,serif;
     font-weight: bold;
@@ -28,21 +28,23 @@
     outline-offset: 0;
 
 }
-.navbar-toggle {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding: 11px 11px;
-    border-color: #fff;
+.navbar-default .navbar-toggle {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 3px 0px;
+    border-color: #a50b0b;
     border-radius: 0;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
     background-color: #fff;
-    border-color: #fff;
+    border-color: #a50b0b;
 }
 .navbar-default .navbar-toggle .icon-bar {
-    height: 3px;
     border-radius: 0;
     background-color: #fff;
+}
+.navbar-toggle .icon-bar+.icon-bar {
+    margin-top: 3px;
 }
 .navbar-toggle:hover .icon-bar,.navbar-toggle:focus .icon-bar {
     background-color: #a50b0b;
@@ -53,17 +55,18 @@
     font-size: 1.3em;
 }
 #nav-list li>a:hover {
-    background-color: #af0c0c;
+    background-color: #c50c0c;
     color: white;
     box-shadow: inset 1px 0 0 #dadce0, inset -1px 0 0 #dadce0,
-                0 1px 5px 1px rgb(60 64 67 / 60%), 0 1px 5px 1px rgb(60 64 67 / 60%);
+                             0px 1px 2px 1px rgb(60 64 67 / 60%), 0px 1px 2px 1px rgb(60 64 67 / 60%);
 }
 /* __________________Main content_________________ */
 #main-content>h1 {
     font-family: "Lucida Sans Unicode",Tahoma,Sans-Serif;
     font-weight: 800;
     font-size: 1.75em;
-    text-shadow: 0 2px 2px rgb(177 175 170);
+    text-shadow: 0 1px 0px #fff, 0 2px 0px #000;
+     letter-spacing: 6px;
 }
 .row {
     margin: 20px 15px 0px 15px;
