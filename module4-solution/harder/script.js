@@ -5,15 +5,26 @@ var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula"
 
 (function(Window){
 
-     var i = 0;
-    for (i=0; i<names.length; i++) {
-        if (names[i].charAt(0).toLowerCase()=="j") {
-            byeSpeaker.speak(names[i]);
+    var i = 0;
+    for (name in names) {
+        if (names[name].charAt(0).toLowerCase()=="j") {
+            byeSpeaker.speak(names[name]);
           }
         else {
-            helloSpeaker.speak(names[i]);
+            helloSpeaker.speak(names[name]);
           }
     } 
+
+    // OR THIS:
+
+        // for (i=0; i<names.length ;i++) {
+        // if (names[i].charAt(0).toLowerCase()=="j") {
+        //     byeSpeaker.speak(names[i]);
+        //   }
+        // else {
+        //     helloSpeaker.speak(names[i]);
+        //   }
+        // }  
 
 })(window);
 
