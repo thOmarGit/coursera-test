@@ -3,11 +3,11 @@
 var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
 
 
-(function(Window){
+(function(){
 
     var i = 0;
     for (name in names) {
-        if (names[name].charAt(0).toLowerCase()=="j") {
+        if (names[name].charAt(0).toLowerCase()==="j") {
             byeSpeaker.speak(names[name]);
           }
         else {
@@ -26,6 +26,6 @@ var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula"
         //   }
         // }  
 
-})(window);
+})();
 
 // © 2021 GitHub, Inc.charAt(index)
